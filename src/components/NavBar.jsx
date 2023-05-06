@@ -1,20 +1,27 @@
 import React from 'react';
 
-function NavBar(props) {
-    const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];
-    const navLinks = pages.map(page => {
-      if(page==='about') return (
-        <a href={'https://github.com/maximmorenko/react-components'} key={page} onClick={props.handleClick}>
-        &nbsp;{page}
-        </a>
-      )
-      return (
-        <a href={'/' + page} key={page} onClick={props.handleClick}>
-           &nbsp;{page}
-        </a>
-      )
-    });
+function NavBar() {
 
-    return <nav>{navLinks}</nav>;
+  function handleClick(item) {
+    alert(`The ${item} page is underway, please try again later!`);
+  }
+
+  const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];
+
+  const navLinks = pages.map(page => {
+    if(page==='about') return (
+      <a href={'https://github.com/maximmorenko/react-components'} key={page} onClick={()=>handleClick(page)}>
+      &nbsp;{page}
+      </a>
+    )
+    return (
+      <a href={'/' + page} key={page} onClick={()=>handleClick(page)}>
+      &nbsp;{page}
+      </a>
+    )
+  });
+
+  return <nav>{navLinks}</nav>;
 }
+
 export default NavBar;

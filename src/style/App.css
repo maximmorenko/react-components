@@ -88,9 +88,9 @@ html, body {
     text-align: center;
     letter-spacing: 2px;
     font-weight: 800;
-    color: #524f4e;
+    color: #ffffff;
 
-    background: rgb(69, 171, 255);
+    background: rgb(0, 133, 242);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 20%);
     transition: .3s;
 
@@ -101,8 +101,11 @@ html, body {
 
 	a:hover {
 		background-color: #9ef1c9;
+		color: #0036ca;
+		font-size: 15px;
 		border: none;
 		padding: 1.5em;
+		border-radius: 50%;
 	}
   
 	.container {
