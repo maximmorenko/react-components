@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import NavBar from './NavBar';
 
 function Talker() {
   function handleClick() {
@@ -9,7 +10,12 @@ function Talker() {
     }
     alert("What's up? " + speech);
 	}
-  return <Button handleClick={handleClick}/>;
+  return <>
+  {/* <NavBar handleClick={handleClick}/> */}
+  <Button handleClick={handleClick}/>
+  </>;
 }
+
+
 
 export default Talker;
