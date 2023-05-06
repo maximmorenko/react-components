@@ -67,12 +67,20 @@ html, body {
 	font-size: 10px;
   }
   
+	.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+	}
+
   button {
 	-webkit-transition-duration: 0.1s; /* Safari */
 	transition-duration: 0.1s;
-	background-color: #F4595B;
+	background-color: #009f52;
 	border-radius: 8px;
-	border-bottom: 4px solid #C24648;
+	border-bottom: 4px solid #001f10;
 	color: white;
 	padding: 15px 32px;
 	text-align: center;
@@ -81,14 +89,15 @@ html, body {
 	font-size: 16px;
 	font-family: 'Oxygen', sans-serif;
 	letter-spacing: 2px;
+	margin: 1em;
   }
   
   button:hover {
-	background-color: #FF7375;
+	background-color: #9ef1c9;
 	border: none;
 	border-radius: 8px;
-	border-bottom: 4px solid #C24648;
-	color: white;
+	border-bottom: 4px solid #002e18;
+	color: rgb(41, 41, 41);
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -99,10 +108,10 @@ html, body {
   }
   
   button:active {
-	background-color: #C24648;
+	background-color: #52805c;
 	border: none;
 	border-radius: 8px;
-	border-bottom: 4px solid #C24648;
+	border-bottom: 4px solid #2a5a3b;
 	color: #CCC;
 	padding: 15px 32px;
 	text-align: center;
