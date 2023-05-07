@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import NavBar from './NavBar';
+// import NavBar from './NavBar';
 
 function Talker() {
   function handleClick() {
