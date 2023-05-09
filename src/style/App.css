@@ -75,6 +75,10 @@ html, body {
     align-items: center;
 	}
 
+	.lighGray {
+		background-color: #CCC;
+	}
+
 	a {
     width: 100px;
     height: 20px;
@@ -149,7 +153,7 @@ html, body {
   }
   
   button:active {
-		background-color: #52805c;
+		background-color: #8c9c90;
 		border: none;
 		border-radius: 8px;
 		border-bottom: 4px solid #2a5a3b;

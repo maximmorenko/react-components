@@ -1,4 +1,5 @@
 import React from 'react';
+import ColorPicker from './ColorPicker';
 import GroceryItem from './GroceryItem';
 import NavBar from './NavBar';
 import Talker from './Talker';
@@ -15,13 +16,14 @@ function ProfilePage() {
         <p>I like movies and blah blah blah blah blah</p>
         <img src="assets/cat.jpg" alt='cat'/>
         <Talker />
-        <h2>Do you need some groceries?</h2>
-        <div>
+        <div className='lighGray' >
+          <h2>Do you need some groceries?</h2>
           <GroceryItem item="Eggs" />
           <GroceryItem item="Banana" />
           <GroceryItem item="Strawberry" />
           <GroceryItem item="Bread" />
         </div>
+        <ColorPicker />
       </div>
     </>
   );
